@@ -1,92 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptionTracker - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-section {
+            margin-top: 2em;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin: 2em 0 1em 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1em;
+            line-height: 1.7;
+        }
+
+        .contact-email {
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #ddd;
+            margin: 2em 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <div class="effective-date">Last Updated: October 17, 2026</div>
+        <h1>Support</h1>
+        <p>
+            Thank you for using <strong>OptionTracker</strong> – options tracker & journal.
+        </p>
 
-        <h2>Your Privacy Matters to Us</h2>
-        <p>At OptionTracker, we believe your trading data is deeply personal. That's why we've designed our app with privacy at its core. Your trades are stored on your device and in your personal iCloud account. We don't keep a copy of them on our servers.</p>
-        <p>This privacy policy explains exactly what limited information we do handle and how we protect you.</p>
-
-        <hr>
-
-        <h2>What We Don't Collect</h2>
-        <p>• Your trades: they stay on your device and in your personal iCloud<br>
-        • Your brokerage login: you sign in on your broker's own page, and we never see your username or password<br>
-        • Your full account numbers: we only keep the last 4 digits<br>
-        • Your payment details: Apple and RevenueCat handle payments<br>
-        • Your location: we don't access or process your location<br>
-        • Advertising data: we don't show ads, and we never sell or share your information</p>
+        <h2>How to Get Help</h2>
+        <p>
+            If you have any questions, encounter issues, or want to provide feedback, we're here to help.
+        </p>
+        <p>
+            <!--Email us directly at: <a href="mailto:hello@zacsoft.co" class="contact-email">hello@zacsoft.co</a>-->
+            Contact us through the in-app forms to submit feature requests, bug reports, or feedback. Or email us at: <a href="mailto:support@optiontracker.co" class="contact-email">support@optiontracker.co</a>
+        </p>
 
         <hr>
 
-        <h2>What We Do Collect</h2>
-        <p>We only collect what's needed to run the app:</p>
-        <p>• Your Account: Sign in with Apple gives us an account ID, and your email if you choose to share it. You can also set a username. We use these to identify your account, verify your email, and answer support requests.</p>
-        <p>• Subscription Information: RevenueCat (our payment processor) handles subscription status and uses device identifiers for subscription validation.</p>
-        <p>• Broker Auto-Sync (optional): if you connect a broker, we store a connection key that only works together with OptionTracker's own credentials, your account names with the last 4 digits of the account numbers, and your sync dates. Your broker activity passes through our server during a sync and isn't kept. Our logs record counts only, like how many activities were received.</p>
-        <p>• Sync Problem Reports (optional): if you use Report a sync problem, we receive only the activity you choose to send, shown to you before sending. Reports are deleted after 30 days.</p>
-        <p>• Bug Reports &amp; Feature Requests: only when you submit them, together with your app version and device model. Including your email for follow-up is optional.</p>
-        <p>• Notifications: if you turn on notifications, we store a device token to deliver them.</p>
-        <p>• Usage Statistics: basic app statistics, such as app opens and how many trades a broker sync imported. These never include your trade details, name, or email.</p>
-
-        <hr>
-
-        <h2>Your Trade Data is Yours Alone</h2>
-        <p>Your trade information, including trades imported by Broker Auto-Sync, is stored:</p>
-        <p>• Locally on your device using SwiftData (Apple's secure data framework)<br>
-        • In your personal iCloud account (if you enable iCloud sync in iOS Settings)</p>
-        <p>Important: iCloud sync is a direct relationship between you and Apple. We (OptionTracker developers) cannot access your iCloud data. Apple encrypts and protects your data according to their privacy policy, not ours.</p>
-        <p>When you delete the app, all your local trade data is automatically removed.</p>
-
-        <hr>
-
-        <h2>Third-Party Services We Use</h2>
-        <p>We work with trusted services to provide our app:</p>
-        <p>• RevenueCat: Handles subscription management and payment processing.</p>
-        <p>• Apple iCloud: Syncs your trades across your devices.</p>
-        <p>• Apple Intelligence: Ask AI runs on your device using Apple's on-device model.</p>
-        <p>• Google Cloud: Sign-in, storage for your account profile, bug reports, feature requests and sync problem reports, the server that runs Broker Auto-Sync, notifications, and usage statistics.</p>
-        <p>• SnapTrade: If you enable optional Broker Auto-Sync, you connect your brokerage through SnapTrade. The connection is read-only: it can read your account activity but can't place trades or move money. Synced trades and holdings are stored on your device (and in your iCloud if you use sync).</p>
-        <p>• marketdata.app: If you enable live options data with your own API key, your device fetches option prices directly from marketdata.app. Your API key is stored on your device only; we do not receive or store it on our servers.</p>
-        <p>Each service has its own privacy policy and security measures.</p>
-
-        <hr>
-
-        <h2>How We Protect Your Privacy</h2>
-        <p>• Your Trades Stay Yours: trades are stored on your devices and in your iCloud, not on our servers<br>
-        • Read-Only Broker Access: Broker Auto-Sync can't place trades or move money<br>
-        • Minimal Data: we only handle what's necessary, and our logs record counts only<br>
-        • Encrypted Connections: all data sent between the app and our servers is encrypted<br>
-        • No Selling or Sharing: we never sell or share your information</p>
-        <p>We believe in privacy by design, not privacy by policy.</p>
-
-        <hr>
-
-        <h2>Your Rights and Control</h2>
-        <p>You have complete control over your data:</p>
-        <p>• Delete Account: in Settings, removes your trades from this device and your iCloud, ends your broker connection at SnapTrade, and signs you out<br>
-        • Disconnect a Broker: anytime in Broker Auto-Sync. Trades already synced stay in the app<br>
-        • Control iCloud Sync: Enable/disable in iOS Settings &gt; [Your Name] &gt; iCloud<br>
-        • Turn Off Notifications: anytime in Settings<br>
-        • Request Deletion: email us to delete your account profile, bug reports, and feature requests from our servers</p>
-        <p>Your data, your choice, always.</p>
-
-        <hr>
-
-        <h2>How Long We Keep Data</h2>
-        <p>• Trades: only on your devices and in your personal iCloud<br>
-        • Broker Connection Information: until you disconnect the broker or delete your account<br>
-        • Sync Problem Reports: deleted after 30 days<br>
-        • Account Profile, Bug Reports &amp; Feature Requests: kept to provide support and improve the app, until you ask us to delete them<br>
-        • Subscription Data: managed by RevenueCat as required for payment processing</p>
-
-        <hr>
-
-        <h2>Updates to This Policy</h2>
-        <p>If we change this policy, we'll update it here, change the date above, and let you know through an app update.</p>
-        <p>Your continued use of the app means you agree to any updates.</p>
-
-        <hr>
-
-        <h2>Questions? We're Here to Help</h2>
-        <p>For questions about this policy, contact us through the in-app forms or email <a href="mailto:support@optiontracker.co" class="contact-email">support@optiontracker.co</a>. We will respond to your inquiries promptly.</p>
+        <div class="contact-section">
+            <h2>Typical Response Time</h2>
+            <p>
+                We usually respond within 24–48 hours. If you don’t hear from us in that time, please check your spam folder or resend your message through the app.
+            </p>
+        </div>
     </div>
+</body>
+</html>
